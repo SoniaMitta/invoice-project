@@ -31,6 +31,7 @@ service satinfotech @(requires: 'authenticated-user') {
    
  entity Billing as projection on db.Billing;
   action BillingFetch() returns Boolean;
+  action BillingFetchStatus() returns String;
 }
 
 // Enable draft support for Billing entity
